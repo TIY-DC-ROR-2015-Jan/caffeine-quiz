@@ -12,4 +12,8 @@ class Coffee
   def empty?
   end
 
+  def be_drunk
+  	@full = false
+  end
+
 end

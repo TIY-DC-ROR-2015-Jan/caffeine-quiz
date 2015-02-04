@@ -8,16 +8,23 @@ class Human
   attr_reader :alertness
 
   def has_coffee?
-    false
+    if @coffee
+      true
+    else
+      false
+    end
   end
 
   def needs_coffee?
-    true
+    ! has_coffee?
   end
 
-  def alertness
-    if @name needs_coffee?
-      @alertness
+  def buy drink
+    @coffee = drink
   end
 
+  def drink!
+    @alertness += 0.33
+    @coffee.be_drunk
+  end
 end
