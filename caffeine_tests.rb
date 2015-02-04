@@ -3,7 +3,7 @@ require 'minitest/autorun'
 require './human'
 require './coffee'
 
-class CaffieneTest < MiniTest::Test
+class CaffeineTest < MiniTest::Test
   def test_humans_tend_to_be_sleepy
     dave = Human.new "Dave"
     assert dave.alertness < 0.1
