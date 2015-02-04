@@ -2,15 +2,14 @@ class Coffee
   
   def initialize(drink_name)
     @name = drink_name
-   
+    @full = true
   end
 
   def full?
-    true
+    @full
   end
 
   def empty?
-
   end
 
 end
