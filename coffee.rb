@@ -1,3 +1,9 @@
 class Coffee
-  # Add code here
+  def initialize name
+  	@full = true
+  end
+
+  def full?
+  	@full
+  end
 end

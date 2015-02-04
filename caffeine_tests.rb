@@ -15,6 +15,11 @@ class CaffeineTest < MiniTest::Test
     assert matt.needs_coffee?
   end
 
+  def test_coffee_starts_off_full
+    mug = Coffee.new "Verona"
+    assert mug.full?
+  end
+
   def test_humans_can_drink_coffee
     mallory = Human.new "Mallory"
     tsmf = Coffee.new "Triple Shot Mocha Frappuccino"
